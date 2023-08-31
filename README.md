@@ -31,7 +31,7 @@ After few seconds open your browser (chrome recommended) prefered by you and on 
 ### Prerequisites
 NextJs ,ReactJs ,NodeJs ,Html ,css , Javascript ,sass and TypeScript .
 
-### Moving forward with the backend :- download Equiam backend from the same repo .
+### Moving forward with the backend :- download Equiam backend from the github repo named EquiamBackend .
 
 
 
