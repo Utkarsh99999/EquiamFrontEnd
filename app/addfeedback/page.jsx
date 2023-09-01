@@ -4,7 +4,7 @@ import {useState} from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 const FeedbackDetail = () => {
-  const [sortBy, setSortBy] = useState("most-upvotes");
+  const [sortBy, setSortBy] = useState("Feature");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleSortChange = (option) => {
@@ -48,31 +48,43 @@ const FeedbackDetail = () => {
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
                   <div
-                    onClick={() => handleSortChange("most-upvotes")}
+                    onClick={() => handleSortChange("Feature")}
                     className={styles.dropdownItem}
                   >
-                    Most Upvotes
+                   <p> Feature</p>
+                   {(sortBy==="Feature")?<Image src="/icon-check.svg" height={12} width={15} alt="cheack"/>:''} 
                   </div>
                   <hr />
                   <div
-                    onClick={() => handleSortChange("least-upvotes")}
+                    onClick={() => handleSortChange("UI")}
                     className={styles.dropdownItem}
                   >
-                    Least Upvotes
+                   <p> UI</p>
+                   {(sortBy==="UI")?<Image src="/icon-check.svg" height={12} width={15} alt="cheack"/>:''} 
                   </div>
                   <hr />
                   <div
-                    onClick={() => handleSortChange("most-comments")}
+                    onClick={() => handleSortChange("UX")}
                     className={styles.dropdownItem}
                   >
-                    Most Comments
+                   <p>UX</p>
+                   {(sortBy==="UX")?<Image src="/icon-check.svg" height={12} width={15} alt="cheack"/>:''}
                   </div>
                   <hr />
                   <div
-                    onClick={() => handleSortChange("least-comments")}
+                    onClick={() => handleSortChange("Enhancement")}
                     className={styles.dropdownItem}
                   >
-                    Least Comments
+                   <p>Enhancement</p>
+                    {(sortBy==="Enhancement")?<Image src="/icon-check.svg" height={12} width={15} alt="cheack"/>:''}
+                  </div>
+                  <hr />
+                  <div
+                    onClick={() => handleSortChange("Bug")}
+                    className={styles.dropdownItem}
+                  >
+                    <p>Bug</p>
+                    {(sortBy==="Bug")?<Image src="/icon-check.svg" height={12} width={15} alt="cheack"/>:''}
                   </div>
                 </div>
               )}
