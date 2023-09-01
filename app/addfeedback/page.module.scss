@@ -69,6 +69,10 @@
         color: rgb(108, 106, 106);
 
         .dropdownItem{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           hr{
             color: rgb(146, 142, 142);
           }
