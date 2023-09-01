@@ -370,11 +370,11 @@ export default function Home() {
               <div key={val._id} id={index} className={styles.flatBox}>
                 <div className={styles.upvoteContainer}>
                   <span className={styles.upvote}>
-                    <Image src="/Path 2.png" height={10} width={15} />
+                    <Image src="/icon-arrow-up.svg" height={10} width={15} />
                     <p>{val.upvotes}</p>
                   </span>
                   <span className={styles.comment}>
-                    <Image src="/Path.png" height={20} width={20} />
+                    <Image src="/icon-comments.svg" height={20} width={20} />
                     <p>{val.comments.length}</p>
                   </span>
                 </div>
@@ -387,7 +387,7 @@ export default function Home() {
                     <div className={styles.advice}>{val.category}</div>
                   </div>
                   <span className={styles.commentsDesktop}>
-                    <Image src="/Path.png" height={20} width={20} />
+                    <Image src="/icon-comments.svg" height={20} width={20} />
                     <p>{val.comments.length}</p>
                   </span>
                 </div>
