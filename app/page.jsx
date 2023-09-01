@@ -364,7 +364,7 @@ export default function Home() {
           </div>
         </div>
 
-        {filteredProduct ? (
+        {filteredProduct.length>0 ? (
           <>
             {filteredProduct.map((val, index) => (
               <div key={val._id} id={index} className={styles.flatBox}>
@@ -397,7 +397,7 @@ export default function Home() {
         ) : (
           <>
             <div className={styles.flatBoxEmpty}>
-              <Image src="/Group 16.png" height={150} width={150} />
+              <Image src="/illustration-empty.svg" height={200} width={200} />
 
               <div className={styles.EmptyText}>
                 <h3>There is no feedback yet.</h3>
